@@ -20,6 +20,7 @@ const HookUseState = () => {
 
 
     return (<>
+        <hr />
         <h2>useState</h2>
         <p>Variavel: {username}</p>
         <p>useState: {name}</p>
@@ -35,6 +36,8 @@ const HookUseState = () => {
         </form>
 
         <p>Você tem {age} anos</p>
+
+        <hr />
 
     </>)
 }
