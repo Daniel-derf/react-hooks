@@ -48,8 +48,6 @@ const HookUseReducer = () => {
     dispatchTasks({type: "DELETE", id})
   }
 
-
-
   return (
     <div>
         <h2>useReducer</h2>
