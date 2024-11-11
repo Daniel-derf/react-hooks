@@ -17,6 +17,13 @@ const HookUseEffect = () => {
 		console.log("Serei executado apenas uma vez!")
 	}, [])
 
+	// item no array de deps
+	const [anotherNumber, setAnotherNumber] = useState(0)
+
+	useEffect(()=>{
+		console.log("Sou executado apenas quando o anotherNumber muda!")
+	}, [anotherNumber])
+
 
   return (
     <div>
@@ -24,7 +31,8 @@ const HookUseEffect = () => {
 
 			<p>Number: {number}</p>
 			<button onClick={changeSomething} >Executar</button>
-
+			<p>Another Number: {anotherNumber}</p>
+			<button onClick={()=>setAnotherNumber(anotherNumber+1)}>Mudar another number</button>
 			<hr />
 		</div>
   )
